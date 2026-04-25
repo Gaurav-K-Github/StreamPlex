@@ -1,0 +1,46 @@
+/* Toasts */
+.toast-root {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  z-index: 200;
+  display: grid;
+  gap: 0.5rem;
+}
+
+.toast {
+  min-width: 220px;
+  max-width: 320px;
+  border-radius: 0.7rem;
+  border: 1px solid;
+  padding: 0.62rem 0.72rem;
+  font-size: 0.82rem;
+  line-height: 1.45;
+  animation: toast-in 200ms ease-out;
+  backdrop-filter: blur(10px);
+}
+
+.toast.info {
+  border-color: rgba(103, 232, 249, 0.45);
+  background: rgba(8, 47, 73, 0.62);
+  color: #bae6fd;
+}
+
+.toast.success {
+  border-color: rgba(110, 231, 183, 0.45);
+  background: rgba(6, 78, 59, 0.65);
+  color: #a7f3d0;
+}
+
+.toast.warn {
+  border-color: rgba(252, 211, 77, 0.45);
+  background: rgba(120, 53, 15, 0.64);
+  color: #fde68a;
+}
+
+.toast.error {
+  border-color: rgba(252, 165, 165, 0.45);
+  background: rgba(127, 29, 29, 0.68);
+  color: #fecaca;
+}
+

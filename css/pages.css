@@ -1,0 +1,365 @@
+/* Genres page */
+.genres-wrap {
+  padding-top: 0.9rem;
+}
+
+.genre-chip-scroll {
+  margin-top: 1.3rem;
+  display: flex;
+  gap: 0.5rem;
+  overflow-x: auto;
+  padding-bottom: 0.2rem;
+  scrollbar-width: none;
+}
+
+.genre-chip-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.genre-chip {
+  white-space: nowrap;
+  border-radius: 999px;
+  border: 1px solid rgba(113, 113, 122, 0.9);
+  background: rgba(24, 24, 27, 0.72);
+  color: #d4d4d8;
+  padding: 0.42rem 0.82rem;
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.genre-chip:hover {
+  border-color: rgba(161, 161, 170, 0.95);
+  background: rgba(39, 39, 42, 0.92);
+  color: #f4f4f5;
+}
+
+.genre-chip.active {
+  border-color: rgba(212, 212, 216, 0.75);
+  background: #f4f4f5;
+  color: #18181b;
+}
+
+.genre-grid {
+  margin-top: 1.3rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+  gap: 0.9rem;
+}
+
+.genre-item {
+  width: 100%;
+}
+
+.genre-item .video-card {
+  width: 100%;
+}
+
+.genre-empty {
+  margin-top: 1.3rem;
+  border-radius: 0.85rem;
+  border: 1px solid rgba(63, 63, 70, 0.8);
+  background: rgba(24, 24, 27, 0.6);
+  padding: 1.1rem;
+  color: #a1a1aa;
+  font-size: 0.9rem;
+}
+
+/* Video page */
+.video-wrap {
+  padding-top: 0.35rem;
+}
+
+.back-link {
+  border: 0;
+  border-radius: 999px;
+  background: rgba(39, 39, 42, 0.75);
+  color: #e4e4e7;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.45rem;
+  padding: 0.52rem 0.9rem;
+  font-size: 0.82rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.back-link:hover {
+  background: rgba(63, 63, 70, 0.82);
+}
+
+.back-link svg {
+  width: 16px;
+  height: 16px;
+}
+
+.back-link.compact {
+  border-radius: 0.6rem;
+}
+
+.video-hero {
+  margin-top: 1rem;
+  border-radius: var(--radius-2xl);
+  overflow: hidden;
+  position: relative;
+}
+
+.video-hero-bg {
+  position: absolute;
+  inset: 0;
+}
+
+.video-hero-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.48;
+}
+
+.video-hero-content {
+  position: relative;
+  z-index: 1;
+  padding: 1.3rem;
+}
+
+.video-badges {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.45rem;
+  margin-bottom: 0.8rem;
+}
+
+.badge {
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #e4e4e7;
+  background: rgba(39, 39, 42, 0.75);
+  border-radius: 0.28rem;
+  padding: 0.3rem 0.45rem;
+}
+
+.badge.badge-red {
+  background: #dc2626;
+  color: #fff;
+}
+
+.video-title {
+  margin: 0;
+  color: #fff;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  line-height: 1;
+  text-transform: uppercase;
+  letter-spacing: -0.02em;
+  font-weight: 900;
+}
+
+.video-meta {
+  margin-top: 0.7rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: #d4d4d8;
+  font-weight: 600;
+}
+
+.video-player-wrap {
+  margin-top: 1rem;
+  border-radius: 1rem;
+  overflow: hidden;
+  background: #000;
+  box-shadow: 0 22px 45px rgba(0, 0, 0, 0.5);
+}
+
+.video-player-wrap video {
+  width: 100%;
+  max-height: 72vh;
+  background: #000;
+}
+
+.video-overview {
+  margin: 1rem 0 0;
+  max-width: 62rem;
+  color: #e4e4e7;
+  line-height: 1.7;
+  font-size: 0.95rem;
+}
+
+.video-info-grid {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.soft-panel {
+  background: linear-gradient(180deg, rgba(32, 31, 31, 0.86), rgba(19, 19, 19, 0.92));
+  box-shadow: 0 22px 50px rgba(0, 0, 0, 0.42);
+  backdrop-filter: blur(20px);
+}
+
+.info-card {
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+.info-card h3 {
+  margin: 0;
+  margin-bottom: 0.6rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: #d4d4d8;
+}
+
+.info-card p {
+  margin: 0;
+  color: #d4d4d8;
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+.debug-info {
+  display: grid;
+  gap: 0.65rem;
+  font-size: 0.84rem;
+}
+
+.debug-line {
+  display: flex;
+  justify-content: space-between;
+  gap: 0.75rem;
+}
+
+.debug-label {
+  color: #a1a1aa;
+}
+
+.debug-value {
+  color: #e4e4e7;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.debug-value.success {
+  color: #6ee7b7;
+}
+
+.debug-value.warn {
+  color: #fcd34d;
+}
+
+.debug-path {
+  font-size: 0.72rem;
+  color: #71717a;
+  word-break: break-all;
+}
+
+/* Settings */
+.settings-wrap {
+  padding-top: 0.55rem;
+}
+
+.settings-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.settings-grid {
+  margin-top: 1.2rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.settings-card {
+  border-radius: 1.4rem;
+  border: 1px solid var(--white-10);
+  background: rgba(0, 0, 0, 0.68);
+  padding: 1rem;
+}
+
+.settings-card.full-width {
+  grid-column: 1 / -1;
+}
+
+.settings-card h2 {
+  margin: 0;
+  font-size: 1.2rem;
+  color: #f4f4f5;
+  font-family: Manrope, Inter, sans-serif;
+}
+
+.settings-help {
+  margin: 0.4rem 0 1rem;
+  font-size: 0.85rem;
+  color: #a1a1aa;
+}
+
+.settings-form {
+  display: grid;
+  gap: 0.6rem;
+}
+
+.settings-form.grid-3 {
+  grid-template-columns: 1fr;
+}
+
+.settings-form label {
+  font-size: 0.64rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #71717a;
+  font-weight: 700;
+}
+
+.settings-form input {
+  width: 100%;
+  border-radius: 0.6rem;
+  border: 1px solid var(--white-10);
+  background: rgba(0, 0, 0, 0.8);
+  color: #f4f4f5;
+  outline: none;
+  padding: 0.62rem 0.8rem;
+  transition: border-color 0.2s ease;
+}
+
+.settings-form input:focus {
+  border-color: rgba(248, 113, 113, 0.65);
+}
+
+.settings-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+.form-message {
+  margin: 0.75rem 0 0;
+  min-height: 1.1rem;
+  border-radius: 0.55rem;
+  font-size: 0.8rem;
+  color: #d4d4d8;
+}
+
+.form-message.success {
+  color: #6ee7b7;
+}
+
+.form-message.error {
+  color: #fca5a5;
+}
+
+.form-message.warn {
+  color: #fcd34d;
+}
+
